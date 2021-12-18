@@ -1,0 +1,67 @@
+,Indicator,NFHS_5,NFHS_4
+1,Female population age 6 years and above who ever attended school (%),70.0,76.8
+2,Population below age 15 years (%),23.4,26.1
+3,"Sex ratio of the total population (females per 1,000 males)",965,955
+4,"Sex ratio at birth for children born in the last five years (females per 1,000 males)","(1,111)",924
+5,Children under age 5 years whose birth was registered with the civil authority (%),100.0,92.8
+6,Deaths in the last 3 years registered with the civil authority (%),*,na
+7,Population living in households with electricity (%),99.7,95.7
+8,Population living in households with an improved drinking-water source (%),98.0,96.4
+9,Population living in households that use an improved sanitation facility(%),61.9,50.9
+10,Households using clean fuel for cooking (%),28.5,48.5
+11,Households using iodized salt (%),98.6,91.2
+12,Households with any usual member covered under a health insurance/financing scheme (%),61.2,36.3
+13,Children age 5 years who attended pre-primary school during the school year 2019-20 (%),*,na
+15,Women who are literate (%),68.2,na
+16,Women with 10 or more years of schooling (%),30.4,37.3
+18,Women age 20-24 years married before age 18 years (%),(7.2),15.3
+19,Births in the 5 years preceding the survey that are third or higher order (%),0.0,1.8
+20,Women age 15-19 years who were already mothers or pregnant at the time of the survey (%),(13.6),4.0
+21,Women age 15-24 years who use hygienic methods of protection during their menstrual period (%),56.2,51.7
+23,Any method (%),83.0,65.9
+24,Any modern method (%),77.8,61.4
+25,Female sterilization (%),74.1,54.1
+26,Male sterilization (%),0.8,0.3
+27,IUD/PPIUD (%),0.5,1.0
+28,Pill (%),0.5,0.8
+29,Condom (%),1.9,5.2
+30,Injectables (%),0.0,0.1
+32,Total unmet need(%),2.9,10.4
+33,Unmet need for spacing (%),1.4,6.5
+35,Health worker ever talked to female non-users about family planning (%),28.8,27.1
+36,Current users ever told about side effects of current method (%),(54.5),36.2
+40,Mothers who had an antenatal check-up in the first trimester (%),(91.8),59.7
+41,Mothers who had at least 4 antenatal care visits (%),(60.4),57.5
+42,Mothers whose last birth was protected against neonatal tetanus (%),(95.1),93.5
+43,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),(76.6),43.3
+44,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),(48.2),18.5
+45,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),(97.9),92.9
+47,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),(97.5),62.1
+48,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),(525),"1,336"
+49,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*,1.7
+51,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),(88.9),na
+53,Institutional births (%),94.7,88.3
+54,Institutional births in public facility (%),89.2,68.0
+55,Home births that were conducted by skilled health personnel (%),0.0,1.2
+56,Births attended by skilled health personnel (%),94.7,85.4
+57,Births delivered by caesarean section (%),7.2,18.7
+58,Births in a private health facility that were delivered by caesarean section (%),*,49.1
+59,Births in a public health facility that were delivered by caesarean section (%),1.8,12.8
+62,Children age 12-23 months fully vaccinated based on information from either vaccination card or mother's recall (%),*,67.5
+63,Children age 12-23 months fully vaccinated based on information from vaccination card only (%),*,78.5
+64,Children age 12-23 months who have received BCG (%),*,98.0
+65,Children age 12-23 months who have received 3 doses of polio vaccine (%),*,70.3
+66,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),*,88.6
+67,Children age 12-23 months who have received the first dose of measles-containing vaccine (MCV) (%),*,90.0
+68,Children age 24-35 months who have received a second dose of measles-containing vaccine (MCV) (%),*,na
+69,Children age 12-23 months who have received 3 doses of rotavirus vaccine (%),*,na
+70,Children age 12-23 months who have received 3 doses of penta or hepatitis B vaccine (%),*,64.5
+71,Children age 9-35 months who received a vitamin A dose in the last 6 months (%),*,74.0
+72,Children age 12-23 months who received most of their vaccinations in a public health facility (%),*,88.0
+73,Children age 12-23 months who received most of their vaccinations in a private health facility (%),*,11.4
+75,Prevalence of diarrhoea in the 2 weeks preceding the survey (%),8.0,9.0
+76,Children with diarrhoea in the 2 weeks preceding the survey who received oral rehydration salts (ORS) (%),*,58.5
+77,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),*,17.9
+78,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,72.5
+79,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding the survey (%),0.0,0.4
+81,Children with fever or symptoms of ARI in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,74.7
