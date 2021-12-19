@@ -44,7 +44,7 @@ def build_districts_list(states):
     for state in states:
         for fe in os.scandir(os.path.join(DATA_PATH, state)):
             if fe.is_file():
-                name = fe.name.split('.')[0]
+                name = fe.name.rsplit('.', 1)[0]
                 data[name] = state
                 districts.append(name)
     return data, districts
@@ -73,22 +73,28 @@ def build_indicator_list(data):
         break
     return id
 indicators = build_indicator_list(data)
-indicator_selected = st.selectbox('Select indicator', indicators)
+indicators_selected = st.selectbox('Select indicator', indicators)
 
 #------------------------------------------------------------------------------
-def format_data(indicator, data):
+def format_data(indicators, data):
     mdf = pd.DataFrame()
     if len(data):
         for de in data.items():
-            df = de[1][1].loc[de[1][1]['Indicator'] == indicator ][['Indicator','NFHS_5']]
-            df['State'] = de[1][0]
-            df['District'] = de[0]
+            df = de[1][1].loc[de[1][1]['Indicator'].isin([indicators])][['NFHS_5']]
+            #df['State'] = de[1][0]
+            df['District'] = de[1][0]+', '+de[0]
             mdf = mdf.append(df)
-        mdf = mdf.pivot(index=['State','District'], values='NFHS_5', columns='Indicator').reset_index()
+        #mdf = mdf.pivot(index=['State','District'], values='NFHS_5', columns='Indicator').reset_index()
+        mdf['NFHS_5']=mdf['NFHS_5'].str.replace(',','')
+        #mdf['NFHS_4']=mdf['NFHS_4'].str.replace(',','')
+        mdf.set_index('District', drop=True, inplace=True)
+        mdf['NFHS_5']=pd.to_numeric(mdf['NFHS_5'])
+        #mdf['NFHS_4']=pd.to_numeric(mdf['NFHS_4'])
     return mdf
-mdata = format_data(indicator_selected, data)
-#st.bar_chart(mdata)
+mdata = format_data(indicators_selected, data) 
+st.bar_chart(mdata)
 st.table(mdata)
+
 
         
 
