@@ -12,7 +12,7 @@ import numpy as np
 import os
 import csv
 
-DATA_PATH = os.path.join('..', 'data')
+DATA_PATH = os.path.join('.', 'data')
 
 st.title('NFHS5 Data Comparison')
 
