@@ -14,6 +14,17 @@ import csv
 
 DATA_PATH = os.path.join('.', 'data')
 
+st.set_page_config(
+     page_title="NFHS5 Data Comparsion App",
+     layout="wide",
+     initial_sidebar_state="expanded",
+     menu_items={
+         'Get Help': 'https://github.com/mlcfoundation/NFHS/issues',
+         'Report a bug': "https://github.com/mlcfoundation/NFHS/issues",
+         'About': "# NFHS5 Data Comparison App"
+     }
+ )
+
 st.title('NFHS5 Data Comparison')
 
 #------------------------------------------------------------------------------
