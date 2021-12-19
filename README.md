@@ -1,6 +1,9 @@
 # NFHS
 National Family &amp; Health Survey, INDIA
 
+# Comparison App
+Sample app https://share.streamlit.io/mlcfoundation/nfhs/main to compare an indicator across states and districts.
+
 # Issues
 ```text
 1.	Unfaithful extraction (105:70) from ./../data/Jammu & Kashmir/Kishtwar.csv for Jammu & Kashmir, Kishtwar
