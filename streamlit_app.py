@@ -26,7 +26,9 @@ st.set_page_config(
      }
  )
 
-st.title('NFHS-5 District Indicators Comparison App')
+st.title('NFHS-5')
+st.header('District Comparison')
+st.subheader('Select state(s) followed by district(s)')
 
 #------------------------------------------------------------------------------
 col1, col2 = st.columns(2)
