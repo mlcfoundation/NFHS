@@ -118,7 +118,7 @@ if do_table:
     st.table(mdata)
 
 if do_chart:
-    c = alt.Chart(mdata).mark_bar().encode(y='District:O')
+    c = alt.Chart(mdata).mark_bar().encode(x=' ', y='District:O')
     txt = c.mark_text(align='left', baseline= 'middle', dx= 3).encode(text='NFHS_5:Q')
     #rule = alt.Chart(mdata).mark_rule(color='red').encode(x='mean(NFHS_5):Q')
     st.altair_chart((c+txt), use_container_width=True)
