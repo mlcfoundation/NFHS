@@ -23,7 +23,7 @@ States = {
             'Data_Begin': 2,
             'Data_Span': 4,
         },
-        'Districts': 20
+        'Districts': 22
     }, 
     'Haryana':
     {
