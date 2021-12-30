@@ -61,8 +61,9 @@ def build_districts_list(states):
         for fe in os.scandir(os.path.join(DATA_PATH, state)):
             if fe.is_file():
                 name = fe.name.rsplit('.', 1)[0]
-                data[name] = state
-                districts.append(state+', '+name)
+                if name not in ['Indicators', 'SampleInfo']:
+                    data[name] = state
+                    districts.append(state+', '+name)
     return data, districts
 states_districts, districts = build_districts_list(selected_states)
 selected_districts = st.multiselect('District(s)', 
@@ -85,6 +86,21 @@ def read_data(districts):
 data = read_data(selected_districts)
 
 #------------------------------------------------------------------------------
+def read_info(states, districts):
+    mdf = pd.DataFrame()
+    for state in states:
+        for fe in os.scandir(os.path.join(DATA_PATH, state)):
+            if fe.is_file() and fe.name == 'SampleInfo.csv':
+                df = pd.read_csv(fe.path)
+                mdf = mdf.append(df)
+    mdf.set_index('District', inplace=True, drop=True)
+    mdf = mdf.loc[[ d.split(',')[1].strip() for d in districts ], ['Households','Women','Men']]
+    return mdf
+info = None
+if len(selected_districts) !=0:
+    info = read_info(selected_states, selected_districts)
+
+#------------------------------------------------------------------------------
 def build_indicator_list(data):
     id = []
     for de in data.items():
@@ -97,29 +113,39 @@ indicators_selected = st.selectbox('Indicator',
                                     help='Select an indicator')
 
 #------------------------------------------------------------------------------
+#'''
 def format_data(indicators, data):
     mdf = pd.DataFrame()
     if len(data):
         for de in data.items():
-            df = de[1][1].loc[de[1][1]['Indicator'].isin([indicators])][['NFHS_5']]
+            df = de[1][1].loc[de[1][1]['Indicator'].isin([indicators])][['NFHS-5']]
             #df['State'] = de[1][0]
             df['District'] = de[1][0]+', '+de[0]
             mdf = mdf.append(df)
-        mdf['NFHS_5']=mdf['NFHS_5'].str.replace(',','')
+        mdf['NFHS-5']=mdf['NFHS-5'].str.replace(',','')
+        mdf['NFHS-5']=mdf['NFHS-5'].str.replace('(','')
+        mdf['NFHS-5']=mdf['NFHS-5'].str.replace(')','')
         #mdf.set_index('District', drop=True, inplace=True)
-        mdf['NFHS_5']=pd.to_numeric(mdf['NFHS_5'])
-        mdf.columns=['NFHS_5','District']
-        mdf = mdf[['District', 'NFHS_5']]
+        mdf['NFHS-5']=pd.to_numeric(mdf['NFHS-5'])
+        mdf.columns=['NFHS-5','District']
+        mdf = mdf[['District', 'NFHS-5']]
         mdf.reset_index(inplace=True, drop=True)
     return mdf
 mdata = format_data(indicators_selected, data)
 
+with st.expander('Sample Data', expanded=True):
+    colHH, colW, colM = st.columns(3)
+    if info is not None:
+        colHH.metric('Households', info.sum()['Households'])
+        colW.metric('Women', info.sum()['Women'])
+        colM.metric('Men', info.sum()['Men'])
+
 if do_table:
-    st.table(mdata)
+    st.dataframe(mdata)
 
 if do_chart:
-    c = alt.Chart(mdata).mark_bar().encode(x='NFHS_5:Q', y='District:O')
-    txt = c.mark_text(align='left', baseline= 'middle', dx= 3).encode(text='NFHS_5:Q')
+    c = alt.Chart(mdata).mark_bar().encode(x='NFHS-5:Q', y='District:O')
+    txt = c.mark_text(align='left', baseline= 'middle', dx= 3).encode(text='NFHS-5:Q')
     #rule = alt.Chart(mdata).mark_rule(color='red').encode(x='mean(NFHS_5):Q')
     st.altair_chart((c+txt), use_container_width=True)
 
