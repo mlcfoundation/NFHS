@@ -126,10 +126,14 @@ def extract_info(txt, state_ind_txt, district_ind_txt):
             #print(f'STATE: {admin_unit}')
     elif district_ind_txt is not None:
         lines = district_ind_txt.strip().split('\n')
-        match = re.search('^(?P<district>.*?)\,\s+(?P<state>.*?)(\-|\–) (.*?)$', lines[0]+lines[1], re.DOTALL)
-        if match is not None:
-            admin_unit = match.group('district').strip()
-            #print(f'DISTRICT: {admin_unit}')
+        if lines[0].strip().startswith('Sikar'):
+            admin_unit = lines[0].strip().split()[0]
+            print(f'DISTRICT: {admin_unit}')
+        else:
+            match = re.search('^(?P<district>.*?)\,\s+(?P<state>.*?)(\-|\–) (.*?)$', lines[0]+lines[1], re.DOTALL)
+            if match is not None:
+                admin_unit = match.group('district').strip()
+                #print(f'DISTRICT: {admin_unit}')
 
     return admin_unit, agency, households, women, men
 

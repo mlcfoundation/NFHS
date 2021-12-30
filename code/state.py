@@ -177,9 +177,12 @@ def persist_indicators(indicators):
 def persist_districts_indicators(indicators):
     for state_indicators in indicators:
         for state, state_data in state_indicators.items():
-            for district_indicators in state_data['Districts']:
-                for district, district_data in district_indicators.items():
-                    district_data.to_csv(path.join(DATA_PATH, state, district+'.csv'))
+            if 'Districts' in state_data:
+                for district_indicators in state_data['Districts']:
+                    for district, district_data in district_indicators.items():
+                        district_data.to_csv(path.join(DATA_PATH, state, district+'.csv'))
+            else:
+                print(f'...No districts in {state}')
 
 @time_it
 def main():
