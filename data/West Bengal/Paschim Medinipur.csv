@@ -36,10 +36,10 @@
 34,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),64.3,26.0
 35,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),31.9,1.7
 36,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),99.1,98.2
-37,days of delivery (%),79.7,74.7
+37,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),79.7,74.7
 38,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"3,388","2,837"
 39,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*,(4.6)
-40,days of delivery (%),80.9,na
+40,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),80.9,na
 41,Institutional births (%),87.6,77.7
 42,Institutional births in public facility (%),72.0,61.8
 43,Home births that were conducted by skilled health personnel (%),5.1,7.3
@@ -47,7 +47,7 @@
 45,Births delivered by caesarean section (%),23.1,21.1
 46,Births in a private health facility that were delivered by caesarean section (%),(63.6),(71.7)
 47,Births in a public health facility that were delivered by caesarean section (%),18.3,15.6
-48,mother's recall (%),76.9,92.2
+48,Children age 12-23 months fully vaccinated based on information from either vaccination card or  mother's recall (%),76.9,92.2
 49,Children age 12-23 months fully vaccinated based on information from vaccination card only (%),86.8,(92.3)
 50,Children age 12-23 months who have received BCG (%),100.0,100.0
 51,Children age 12-23 months who have received 3 doses of polio vaccine (%),80.1,96.1
@@ -64,7 +64,7 @@
 62,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),*,*
 63,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,*
 64,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding the survey (%),1.4,1.6
-65,health provider (%),72.1,(86.6)
+65,Children with fever or symptoms of ARI in the 2 weeks preceding the survey taken to a health facility or health provider (%),72.1,(86.6)
 66,Indicators,(2019-20),(2015-16)
 67,Children under age 3 years breastfed within one hour of birth (%),67.9,48.1
 68,Children under age 6 months exclusively breastfed (%),*,*
@@ -84,19 +84,19 @@
 82,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),82.0,67.3
 83,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),(62.9),(58.1)
 84,All women age 15-49 years who are anaemic (%),81.5,67.0
-85,All women age 15-19 years who are anaemic (%),84.5,66.4
-86,Blood sugar level - high (141-160 mg/dl)(%),9.3,na
-87,Blood sugar level - very high (>160 mg/dl)(%),7.8,na
-88,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),17.9,na
-89,Blood sugar level - high (141-160 mg/dl)(%),9.9,na
-90,Blood sugar level - very high (>160 mg/dl) (%),10.5,na
-91,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),21.7,na
-92,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),9.1,na
-93,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),5.0,na
-94,control blood pressure (%),19.3,na
-95,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),10.7,na
-96,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),4.3,na
-97,control blood pressure (%),19.0,na
+85,Women - All women age 15-19 years who are anaemic (%),84.5,66.4
+86,Women - Blood sugar level - high (141-160 mg/dl)(%),9.3,na
+87,Women - Blood sugar level - very high (>160 mg/dl)(%),7.8,na
+88,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),17.9,na
+89,Men - Blood sugar level - high (141-160 mg/dl)(%),9.9,na
+90,Men - Blood sugar level - very high (>160 mg/dl) (%),10.5,na
+91,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),21.7,na
+92,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),9.1,na
+93,Women - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),5.0,na
+94,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),19.3,na
+95,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),10.7,na
+96,Men - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),4.3,na
+97,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),19.0,na
 98,Ever undergone a screening test for cervical cancer (%),0.0,na
 99,Ever undergone a breast examination for breast cancer (%),0.0,na
 100,Ever undergone an oral cavity examination for oral cancer (%),0.0,na

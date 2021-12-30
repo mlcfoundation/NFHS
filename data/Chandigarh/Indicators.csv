@@ -97,22 +97,22 @@
 95,All women age 15-49 years who are anaemic (%),60.3,(64.0),60.3,75.9
 96,All women age 15-19 years who are anaemic (%),57.5,*,57.7,74.7
 97,Men age 15-49 years who are anaemic (<13.0 g/dl)%),8.1,*,8.1,19.3
-98,Men age 15-19 years who are anaemic (<13.0 g/dl)(%),*,*,*,(22.4)
-99,Blood sugar level - high (141-160 mg/dl)(%),6.0,(3.5),6.0,na
-100,Blood sugar level - very high (>160 mg/dl)(%),12.0,(13.8),12.0,na
-101,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood  sugar level (%),19.0,(17.2),19.0,na
-102,Blood sugar level - high (141-160 mg/dl)(%),7.1,(8.0),7.1,na
-103,Blood sugar level - very high (>160 mg/dl) (%),8.8,(8.0),8.8,na
-104,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood  sugar level (%),16.6,(16.0),16.6,na
-105,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or  Diastolic 90-99 mm of Hg) (%),14.4,(20.0),14.5,na
-106,Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or  Diastolic ≥100 mm of Hg) (%),5.5,(6.7),5.6,na
-107,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),25.0,(30.0),25.0,na
-108,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or  Diastolic 90-99 mm of Hg) (%),18.6,(19.2),18.7,na
-109,Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or  Diastolic ≥100 mm of Hg) (%),8.6,(15.4),8.7,na
-110,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),30.6,(34.6),30.6,na
-111,Ever undergone a screening test for cervical cancer (%),1.4,*,1.4,na
-112,Ever undergone a breast examination for breast cancer (%),0.0,*,0.0,na
-113,Ever undergone an oral cavity examination for oral cancer (%),0.4,*,0.4,na
+98,Women - Men age 15-19 years who are anaemic (<13.0 g/dl)(%),*,*,*,(22.4)
+99,Women - Blood sugar level - high (141-160 mg/dl)(%),6.0,(3.5),6.0,na
+100,Women - Blood sugar level - very high (>160 mg/dl)(%),12.0,(13.8),12.0,na
+101,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood  sugar level (%),19.0,(17.2),19.0,na
+102,Men - Blood sugar level - high (141-160 mg/dl)(%),7.1,(8.0),7.1,na
+103,Men - Blood sugar level - very high (>160 mg/dl) (%),8.8,(8.0),8.8,na
+104,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood  sugar level (%),16.6,(16.0),16.6,na
+105,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or  Diastolic 90-99 mm of Hg) (%),14.4,(20.0),14.5,na
+106,Women - Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or  Diastolic ≥100 mm of Hg) (%),5.5,(6.7),5.6,na
+107,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),25.0,(30.0),25.0,na
+108,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or  Diastolic 90-99 mm of Hg) (%),18.6,(19.2),18.7,na
+109,Men - Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or  Diastolic ≥100 mm of Hg) (%),8.6,(15.4),8.7,na
+110,Women - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),30.6,(34.6),30.6,na
+111,Women - Ever undergone a screening test for cervical cancer (%),1.4,*,1.4,na
+112,Women - Ever undergone a breast examination for breast cancer (%),0.0,*,0.0,na
+113,Men - Ever undergone an oral cavity examination for oral cancer (%),0.4,*,0.4,na
 114,Ever undergone an oral cavity examination for oral cancer (%),(2.4),*,(2.4),na
 115,Women who have comprehensive knowledge of HIV/AIDS (%),20.3,*,20.3,41.1
 116,Men who have comprehensive knowledge of HIV/AIDS(%),53.6,*,53.6,66.4

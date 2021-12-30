@@ -10,6 +10,11 @@ import camelot
 import re
 import pandas as pd
 
+INDICATOR_STATE_PREFIX_WOMEN_ROWS = [98,99,100,104,105,106,110,111,112]
+INDICATOR_STATE_PREFIX_MEN_ROWS = [101,102,103,107,108,109,113]
+INDICATOR_DISTRICT_PREFIX_WOMEN_ROWS = [85,86,87,91,92,93]
+INDICATOR_DISTRICT_PREFIX_MEN_ROWS = [88,89,90,94,95,96]
+
 def extract_state_data(tables, name):
     df = pd.DataFrame()
 
@@ -45,6 +50,11 @@ def extract_state_data(tables, name):
         # remove the numbered list from indicators
         df.at[row[0], 'Indicator'] = re.sub("^\d+\.[\s+]?", "", df.at[row[0], 'Indicator'])
 
+        if row[0] in INDICATOR_STATE_PREFIX_WOMEN_ROWS:
+            df.at[row[0], 'Indicator'] = 'Women - ' + df.at[row[0], 'Indicator']
+        elif row[0] in INDICATOR_STATE_PREFIX_MEN_ROWS:
+            df.at[row[0], 'Indicator'] = 'Men - ' + df.at[row[0], 'Indicator']        
+
     print(f'Extracted data for {name}')
     return df
 
@@ -53,6 +63,11 @@ def extract_districts_data(tables, name):
     
     # Merge tables
     for table in tables:
+        # Since we are manually specifying the column boundaries, even the 
+        # tabels having only NFHS-5 data are gong to have 3 columns. We need
+        # drop that column.
+        if table.df.iat[0,2].strip().startswith('NFHS-5'):
+            table.df.drop(columns=[1], inplace=True)
         # Drop few two rows
         table.df.drop(labels=[0,1], inplace=True)
         # Add new column headers
@@ -71,16 +86,16 @@ def extract_districts_data(tables, name):
         if num_cols == 2:
             # For districts that are newly created between NFHS4 and NFHS5
             # time period.
-            if (row[1].strip().startswith('<s>')) or \
-                (len(row[1].strip()) == 0) or \
-                (len(row[2].strip()) == 0) or \
-                (row[2].strip().startswith('Total')):
+            if (str(row[1]).strip().startswith('<s>')) or \
+                (len(str(row[1]).strip()) == 0) or \
+                (len(str(row[2]).strip()) == 0) or \
+                (str(row[2]).strip().startswith('Total')):
                     droppable.append(row[0])            
         else:
-            if (row[1].strip().startswith('<s>')) or \
-                (len(row[1].strip()) == 0) or \
-                (len(row[3].strip()) == 0) or \
-                (row[2].strip().startswith('Total') and row[3].strip().startswith('Total')):
+            if (str(row[1]).strip().startswith('<s>')) or \
+                (len(str(row[1]).strip()) == 0) or \
+                (len(str(row[3]).strip()) == 0) or \
+                (str(row[2]).strip().startswith('Total') and str(row[3]).strip().startswith('Total')):
                     droppable.append(row[0])
 
     # Drop all dropeables
@@ -94,6 +109,11 @@ def extract_districts_data(tables, name):
         df.at[row[0], 'Indicator'] = re.sub("\<s\>(.*?)\<\/s\>", "", df.at[row[0], 'Indicator'], re.DOTALL)
         # remove the numbered list from indicators
         df.at[row[0], 'Indicator'] = re.sub("^\d+\.[\s+]?", "", df.at[row[0], 'Indicator'])
+
+        if row[0] in INDICATOR_DISTRICT_PREFIX_WOMEN_ROWS:
+            df.at[row[0], 'Indicator'] = 'Women - ' + df.at[row[0], 'Indicator']
+        elif row[0] in INDICATOR_DISTRICT_PREFIX_MEN_ROWS:
+            df.at[row[0], 'Indicator'] = 'Men - ' + df.at[row[0], 'Indicator']
 
     print(f'...Extracted data for {name}')
     return df

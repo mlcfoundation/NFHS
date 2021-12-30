@@ -120,9 +120,10 @@ def get_indicators(info):
                                           flavor='stream',
                                           flag_size=True,
                                           strip_text='\n',
-                                          row_tol=5,
+                                          row_tol=10,
                                           layout_kwargs={'detect_vertical': False},
-                                          table_areas=['31,775,560,50'])
+                                          table_areas=['31,775,560,50'],
+                                          columns=['470,523'])
 
                 # Determine district data
                 indicators[state]['Districts'].append({

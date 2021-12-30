@@ -36,10 +36,10 @@
 34,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),74.8
 35,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),54.9
 36,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),96.2
-37,delivery (%),92.4
+37,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days ofdelivery (%),92.4
 38,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"2,404"
 39,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*
-40,delivery (%),88.3
+40,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days ofdelivery (%),88.3
 41,Institutional births (%),92.5
 42,Institutional births in public facility (%),52.8
 43,Home births that were conducted by skilled health personnel (%),0.5
@@ -64,7 +64,7 @@
 62,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),*
 63,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (%),*
 64,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding the survey (%),9.2
-65,health provider (%),72.7
+65,Children with fever or symptoms of ARI in the 2 weeks preceding the survey taken to a health facility orhealth provider (%),72.7
 66,Children under age 3 years breastfed within one hour of birth (%),51.8
 67,Children under age 6 months exclusively breastfed (%),*
 68,Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),*
@@ -84,18 +84,18 @@
 82,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),(44.2)
 83,All women age 15-49 years who are anaemic (%),56.4
 84,All women age 15-19 years who are anaemic (%),65.9
-85,Blood sugar level - high (141-160 mg/dl)(%),3.8
-86,Blood sugar level - very high (>160 mg/dl)(%),7.4
-87,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.6
-88,Blood sugar level - high (141-160 mg/dl)(%),7.4
-89,Blood sugar level - very high (>160 mg/dl) (%),8.6
-90,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),17.0
-91,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),13.3
-92,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),3.0
-93,pressure (%),19.5
-94,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),16.7
-95,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),7.7
-96,pressure (%),26.5
+85,Women - Blood sugar level - high (141-160 mg/dl)(%),3.8
+86,Women - Blood sugar level - very high (>160 mg/dl)(%),7.4
+87,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.6
+88,Men - Blood sugar level - high (141-160 mg/dl)(%),7.4
+89,Men - Blood sugar level - very high (>160 mg/dl) (%),8.6
+90,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),17.0
+91,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),13.3
+92,Women - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),3.0
+93,Women - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control bloodpressure (%),19.5
+94,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),16.7
+95,Men - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),7.7
+96,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control bloodpressure (%),26.5
 97,Ever undergone a screening test for cervical cancer (%),0.5
 98,Ever undergone a breast examination for breast cancer (%),0.0
 99,Ever undergone an oral cavity examination for oral cancer (%),1.6

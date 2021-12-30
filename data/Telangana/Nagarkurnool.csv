@@ -36,10 +36,10 @@
 34,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),65.9
 35,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),41.1
 36,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),97.0
-37,delivery (%),90.3
+37,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),90.3
 38,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"2,975"
 39,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*
-40,delivery (%),91.0
+40,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),91.0
 41,Institutional births (%),98.0
 42,Institutional births in public facility (%),56.2
 43,Home births that were conducted by skilled health personnel (%),2.0
@@ -84,18 +84,18 @@
 82,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),*
 83,All women age 15-49 years who are anaemic (%),54.0
 84,All women age 15-19 years who are anaemic (%),62.1
-85,Blood sugar level - high (141-160 mg/dl)(%),4.5
-86,Blood sugar level - very high (>160 mg/dl)(%),6.4
-87,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.5
-88,Blood sugar level - high (141-160 mg/dl)(%),7.0
-89,Blood sugar level - very high (>160 mg/dl) (%),6.8
-90,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),14.5
-91,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),12.9
-92,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.5
-93,pressure (%),24.6
-94,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),17.0
-95,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.3
-96,pressure (%),27.3
+85,Women - Blood sugar level - high (141-160 mg/dl)(%),4.5
+86,Women - Blood sugar level - very high (>160 mg/dl)(%),6.4
+87,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.5
+88,Men - Blood sugar level - high (141-160 mg/dl)(%),7.0
+89,Men - Blood sugar level - very high (>160 mg/dl) (%),6.8
+90,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),14.5
+91,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),12.9
+92,Women - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.5
+93,Women - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),24.6
+94,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),17.0
+95,Men - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.3
+96,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),27.3
 97,Ever undergone a screening test for cervical cancer (%),2.0
 98,Ever undergone a breast examination for breast cancer (%),0.2
 99,Ever undergone an oral cavity examination for oral cancer (%),2.6
