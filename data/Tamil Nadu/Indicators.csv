@@ -1,0 +1,133 @@
+,Indicator,NFHS-5 Urban,NFHS-5 Rural,NFHS-5 Total,NFHS-4 Total
+0,Population and Household Profile,,Urban  Rural,Total,Total
+1,Female population age 6 years and above who ever attended school (%),86.8,74.5,80.4,77.2
+2,Population below age 15 years (%),20.0,21.9,21.0,23.3
+3,"Sex ratio of the total population (females per 1,000 males)","1,062","1,113","1,088","1,033"
+4,"Sex ratio at birth for children born in the last five years (females per 1,000 males)",893,867,878,954
+5,Children under age 5 years whose birth was registered with the civil authority (%),98.3,98.3,98.3,98.3
+6,Deaths in the last 3 years registered with the civil authority (%),94.9,91.6,93.0,na
+7,Population living in households with electricity (%),99.6,99.1,99.3,99.0
+8,Population living in households with an improved drinking-water source (%),99.1,98.1,98.6,97.7
+9,Population living in households that use an improved sanitation facility(%),82.8,63.3,72.6,52.5
+10,Households using clean fuel for cooking (%),92.9,73.7,82.9,73.0
+11,Households using iodized salt (%),95.0,89.3,92.0,82.8
+12,Households with any usual member covered under a health insurance/financing scheme (%),61.1,71.4,66.5,64.1
+13,Children age 5 years who attended pre-primary school during the school year 2019-20 (%),31.4,19.9,25.2,na
+14,Women who are literate (%),88.9,79.6,84.0,na
+15,Men who are literate (%),92.0,89.6,90.7,na
+16,Women with 10 or more years of schooling (%),63.7,49.9,56.6,50.9
+17,Men with 10 or more years of schooling (%),64.4,54.3,59.1,58.3
+18,Women who have ever used the internet (%),55.8,39.2,46.9,na
+19,Men who have ever used the internet (%),76.1,64.9,70.2,na
+20,Women age 20-24 years married before age 18 years (%),10.4,15.2,12.8,16.3
+21,Men age 25-29 years married before age 21 years (%),6.0,3.3,4.5,9.0
+22,Total fertility rate (children per woman),1.6,1.9,1.8,1.7
+23,Women age 15-19 years who were already mothers or pregnant at the time of the survey (%),4.2,8.2,6.3,5.0
+24,Adolescent fertility rate for women age 15-19 years,23,44,34,39
+25,Neonatal mortality rate (NNMR),8.5,16.1,12.7,14.0
+26,Infant mortality rate (IMR),14.9,21.7,18.6,20.2
+27,Under-five mortality rate (U5MR),17.3,26.4,22.3,26.8
+28,Any method (%),67.6,69.5,68.6,53.2
+29,Any modern method (%),64.0,66.8,65.5,52.6
+30,Female sterilization (%),55.6,59.9,57.8,49.4
+31,Male sterilization (%),0.1,0.1,0.1,0.0
+32,IUD/PPIUD (%),4.8,4.7,4.8,1.9
+33,Pill (%),0.4,0.3,0.3,0.2
+34,Condom (%),2.6,1.2,1.8,0.8
+35,Injectables (%),0.1,0.3,0.2,0.1
+36,Total unmet need(%),8.1,6.9,7.5,10.1
+37,Unmet need for spacing (%),3.3,2.8,3.0,4.8
+38,Health worker ever talked to female non-users about family planning (%),27.4,29.5,28.5,30.2
+39,Current users ever told about side effects of current method (%),83.0,82.3,82.6,76.6
+40,Mothers who had an antenatal check-up in the first trimester (%),76.7,78.0,77.4,64.0
+41,Mothers who had at least 4 antenatal care visits (%),88.8,90.8,89.9,81.1
+42,Mothers whose last birth was protected against neonatal tetanus (%),89.5,89.9,89.7,71.0
+43,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),84.2,81.0,82.5,64.0
+44,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),66.4,60.3,63.1,40.1
+45,Registered pregnancies for which the mother received a Mother and Child Protection (MCP)card (%),98.1,99.4,98.8,96.0
+46,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other healthpersonnel within 2 days of delivery (%),92.5,93.7,93.2,74.0
+47,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"3,647","3,097","3,316","2,609"
+48,Children born at home who were taken to a health facility for a check-up within 24 hours ofbirth (%),*,*,*,(11.3)
+49,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other healthpersonnel within 2 days of delivery (%),95.1,94.8,94.9,na
+50,Institutional births (%),99.8,99.4,99.6,98.9
+51,Institutional births in public facility (%),58.0,74.0,66.9,66.7
+52,Home births that were conducted by skilled health personnel (%),0.2,0.3,0.2,0.6
+53,Births attended by skilled health personnel (%),100.0,99.7,99.8,99.2
+54,Births delivered by caesarean section (%),47.5,42.9,44.9,34.1
+55,Births in a private health facility that were delivered by caesarean section (%),61.5,66.7,63.8,51.3
+56,Births in a public health facility that were delivered by caesarean section (%),37.5,35.1,36.0,26.3
+57,Children age 12-23 months fully vaccinated based on information from either vaccination cardor mother's recall (%),86.4,91.7,89.2,69.7
+58,Children age 12-23 months fully vaccinated based on information from vaccination cardonly (%),89.4,91.3,90.4,76.1
+59,Children age 12-23 months who have received BCG (%),96.9,98.2,97.6,94.9
+60,Children age 12-23 months who have received 3 doses of polio vaccine (%),89.9,92.9,91.5,82.3
+61,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),93.0,96.3,94.8,84.5
+62,Children age 12-23 months who have received the first dose of measles-containingvaccine (MCV) (%),94.7,96.8,95.8,85.1
+63,Children age 24-35 months who have received a second dose of measles-containingvaccine (MCV) (%),40.9,48.0,44.7,na
+64,Children age 12-23 months who have received 3 doses of rotavirus vaccine (%),65.8,67.0,66.4,na
+65,Children age 12-23 months who have received 3 doses of penta or hepatitis B vaccine (%),90.4,94.1,92.3,68.2
+66,Children age 9-35 months who received a vitamin A dose in the last 6 months (%),68.3,68.0,68.2,73.0
+67,Children age 12-23 months who received most of their vaccinations in a public healthfacility (%),83.1,95.6,89.8,86.1
+68,Children age 12-23 months who received most of their vaccinations in a private healthfacility (%),16.9,4.2,10.1,14.0
+69,Prevalence of diarrhoea in the 2 weeks preceding the survey (%),3.6,3.8,3.7,8.0
+70,Children with diarrhoea in the 2 weeks preceding the survey who received oral rehydrationsalts (ORS) (%),51.0,55.9,53.8,61.8
+71,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),26.9,30.4,28.9,41.3
+72,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or healthprovider (%),62.0,58.9,60.2,73.2
+73,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding thesurvey (%),1.4,0.9,1.1,2.8
+74,Children with fever or symptoms of ARI in the 2 weeks preceding the survey taken to a healthfacility or health provider (%),68.0,67.0,67.4,82.2
+75,Children under age 3 years breastfed within one hour of birth (%),60.0,60.4,60.2,54.7
+76,Children under age 6 months exclusively breastfed (%),45.5,61.9,55.1,48.3
+77,Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),70.2,64.0,66.5,67.5
+78,Breastfeeding children age 6-23 months receiving an adequate diet (%),14.9,11.2,12.8,21.4
+79,Non-breastfeeding children age 6-23 months receiving an adequate diet (%),23.5,24.6,24.1,47.1
+80,Total children age 6-23 months receiving an adequate diet (%),17.9,15.0,16.3,30.7
+81,Children under 5 years who are stunted (height-for-age) (%),22.2,27.2,25.0,27.1
+82,Children under 5 years who are wasted (weight-for-height) (%),13.9,15.2,14.6,19.7
+83,Children under 5 years who are severely wasted (weight-for-height) (%),5.3,5.6,5.5,7.9
+84,Children under 5 years who are underweight (weight-for-age) (%),20.0,23.5,22.0,23.8
+85,Children under 5 years who are overweight (weight-for-height) (%),5.1,3.7,4.3,5.0
+86,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),9.7,15.2,12.6,14.6
+87,Men whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),11.3,12.8,12.1,12.4
+88,Women who are overweight or obese (BMI ≥25.0 kg/m) (%),46.1,35.4,40.4,30.9
+89,Men who are overweight or obese (BMI ≥25.0 kg/m) (%),43.1,31.6,37.0,28.2
+90,Women who have high risk waist-to-hip ratio (≥0.85) (%),58.3,53.8,55.9,na
+91,Men who have high risk waist-to-hip ratio (≥0.90) (%),55.6,56.8,56.2,na
+92,Children age 6-59 months who are anaemic (<11.0 g/dl) (%),53.7,60.4,57.4,50.7
+93,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),51.5,55.4,53.6,55.4
+94,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),42.6,53.1,48.3,44.4
+95,All women age 15-49 years who are anaemic (%),51.3,55.3,53.4,55.0
+96,All women age 15-19 years who are anaemic (%),50.6,54.9,52.9,54.2
+97,Men age 15-49 years who are anaemic (<13.0 g/dl)%),15.0,15.5,15.2,20.4
+98,Women - Men age 15-19 years who are anaemic (<13.0 g/dl)(%),24.3,24.9,24.6,26.0
+99,Women - Blood sugar level - high (141-160 mg/dl)(%),8.2,6.9,7.5,na
+100,Women - Blood sugar level - very high (>160 mg/dl)(%),13.2,9.4,11.1,na
+101,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),23.8,18.0,20.7,na
+102,Men - Blood sugar level - high (141-160 mg/dl)(%),8.7,7.6,8.1,na
+103,Men - Blood sugar level - very high (>160 mg/dl) (%),12.7,11.2,11.9,na
+104,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),23.7,20.6,22.1,na
+105,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),14.8,13.8,14.3,na
+106,Women - Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or Diastolic ≥100 mm of Hg) (%),6.5,5.9,6.2,na
+107,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),26.4,23.4,24.8,na
+108,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),20.1,19.0,19.5,na
+109,Men - Moderately or severely elevated blood pressure (Systolic ≥160 mm of Hg and/or Diastolic ≥100 mm of Hg) (%),7.6,7.1,7.4,na
+110,Women - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),31.5,29.0,30.2,na
+111,Women - Ever undergone a screening test for cervical cancer (%),10.0,9.6,9.8,na
+112,Women - Ever undergone a breast examination for breast cancer (%),5.9,5.3,5.6,na
+113,Men - Ever undergone an oral cavity examination for oral cancer (%),1.3,1.1,1.2,na
+114,Ever undergone an oral cavity examination for oral cancer (%),0.3,1.0,0.7,na
+115,Women who have comprehensive knowledge of HIV/AIDS (%),24.6,22.8,23.6,16.0
+116,Men who have comprehensive knowledge of HIV/AIDS(%),31.1,22.4,26.6,10.9
+117,Women who know that consistent condom use can reduce the chance of getting HIV/AIDS (%),80.7,75.6,77.9,64.7
+118,Men who know that consistent condom use can reduce the chance of getting HIV/AIDS (%),89.7,90.4,90.1,79.8
+119,Currently married women who usually participate in three household decisions(%),91.8,93.7,92.8,84.0
+120,Women who worked in the last 12 months and were paid in cash (%),35.4,45.5,40.8,30.5
+121,Women owning a house and/or land (alone or jointly with others) (%),43.2,52.0,47.9,36.2
+122,Women having a bank or savings account that they themselves use (%),92.7,91.7,92.2,77.0
+123,Women having a mobile phone that they themselves use (%),81.2,68.9,74.6,62.0
+124,Women age 15-24 years who use hygienic methods of protection during their menstrual period (%),98.6,98.0,98.3,91.4
+125,Ever-married women age 18-49 years who have ever experienced spousal violence (%),32.9,42.2,38.1,40.7
+126,Ever-married women age 18-49 years who have experienced physical violence during any pregnancy (%),3.3,3.4,3.3,6.2
+127,Young women age 18-29 years who experienced sexual violence by age 18 (%),0.0,0.0,0.0,0.9
+128,Women age 15 years and above who use any kind of tobacco (%),2.3,7.3,4.9,na
+129,Men age 15 years and above who use any kind of tobacco (%),16.7,23.3,20.1,na
+130,Women age 15 years and above who consume alcohol (%),0.2,0.4,0.3,na
+131,Men age 15 years and above who consume alcohol (%),21.5,29.2,25.4,na
