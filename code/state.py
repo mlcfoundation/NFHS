@@ -13,7 +13,7 @@ import camelot
 import extractor
 from utils import time_it
 from geo import States
-from os import path
+from os import path, stat
 import pandas as pd
 
 PATH = path.join('..', 'reports')
@@ -78,12 +78,13 @@ def get_info(fmap):
 
 @time_it
 def get_indicators(info):
-    for state, data in info.items():
-        print(f'--> {state}')
+    indicators = {}
+    for state, state_data in info.items():
         tables = None
+        indicators[state] = {}
 
         # The state
-        theState = States[data['_Unit_Name']]
+        theState = States[state_data['_Unit_Name']]
 
         # Get state data span
         d_begin = theState['State']['Begin'] + theState['State']['Data_Begin']
@@ -91,7 +92,7 @@ def get_indicators(info):
 
         # Open file in camelot
         try:
-            tables = camelot.read_pdf(data['_Unit_File'], 
+            tables = camelot.read_pdf(state_data['_Unit_File'], 
                                       f'{d_begin}-{d_end}',
                                       flavor='stream',
                                       flag_size=True,
@@ -103,33 +104,31 @@ def get_indicators(info):
             return e
 
         # Determine state data
-        df = extractor.extract_state_data(tables, data['_Unit_Name'])
-        if df is not None:
-            df.to_csv(path.join(DATA_PATH, state, 'Indicators.csv'))
+        indicators[state]['State'] = \
+            extractor.extract_state_data(tables, state_data['_Unit_Name'])
 
-        '''
         # Determine district data
         if theState['Districts'] != 0:
-            for district, district_data in data['Districts'].items():
+            indicators[state]['Districts'] = []
+            for district, district_data in state_data['Districts'].items():
                 d_begin = district_data['_Unit_Idx'] + theState['District']['Data_Begin']
-                d_end = d_begin + theState['District']['Data_Span'] - 2
+                d_end = d_begin + theState['District']['Data_Span'] - theState['District']['Data_Begin']
 
                 # Open file in camelot
-                tables = camelot.read_pdf(data['_Unit_File'],
+                tables = camelot.read_pdf(state_data['_Unit_File'], 
                                           f'{d_begin}-{d_end}',
                                           flavor='stream',
                                           flag_size=True,
                                           strip_text='\n',
-                                          layout_kwargs={'detect_vertical': False})
+                                          row_tol=5,
+                                          layout_kwargs={'detect_vertical': False},
+                                          table_areas=['31,775,560,50'])
 
-                print(f'{state} - {district} {d_begin}:{d_end} {len(tables)}')
-
-                # Extract district data
-                df = extractor.extract_districts_data(tables, district_data['_Unit_Name'])
-                if df is not None:
-                    df.to_csv(path.join(DATA_PATH, state, district+'.csv'))
-        '''
-        return True
+                # Determine district data
+                indicators[state]['Districts'].append({
+                    district: extractor.extract_districts_data(tables, district)
+                })
+    return indicators
 
 def get_state_info(info):
     for state, data in info.items():
@@ -169,6 +168,20 @@ def persist_districts_sampling(samplings):
             df.to_csv(path.join(DATA_PATH, state, 'SampleInfo.csv'))
 
 @time_it
+def persist_indicators(indicators):
+    for state_indicators in indicators:
+        for state, state_data in state_indicators.items():
+            state_data['State'].to_csv(path.join(DATA_PATH, state, 'Indicators.csv'))
+
+@time_it
+def persist_districts_indicators(indicators):
+    for state_indicators in indicators:
+        for state, state_data in state_indicators.items():
+            for district_indicators in state_data['Districts']:
+                for district, district_data in district_indicators.items():
+                    district_data.to_csv(path.join(DATA_PATH, state, district+'.csv'))
+
+@time_it
 def main():
     with Pool(processes=6) as mp:
         fmaps = mp.map(name_to_path, States.keys()) #[ name_to_path(state) for state in States.keys() ]
@@ -177,28 +190,11 @@ def main():
         state_info = mp.map(get_state_info, info)
         district_info = mp.map(get_district_info, info)
 
-    #fmaps = [ name_to_path(state) for state in States.keys() ]
-    #info = [ get_info(fmap) for fmap in fmaps ]
-    #indicators = [ get_indicators(info_i) for info_i in info ]
-    #state_info = [ get_state_info(info_i)  for info_i in info ]
-    #district_info = [ get_district_info(info_i) for info_i in info ]
-
-    #print(state_info)
     persist_sampling(state_info)
     persist_districts_sampling(district_info)
+    persist_indicators(indicators)
+    persist_districts_indicators(indicators)
 
-    '''
-    print(datas)
-
-    # Reformat for dataframe
-    data = {}
-    for sampling in samplings:
-        for key, val in sampling.items():
-            data[key] = val
-
-    df = pandas.DataFrame(data).transpose()
-    df.to_csv(path.join(DATA_PATH, 'IndiaSamples.csv'))
-    '''
 if __name__ == '__main__':
     freeze_support()
     main()

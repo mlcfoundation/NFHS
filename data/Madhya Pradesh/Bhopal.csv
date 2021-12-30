@@ -1,105 +1,105 @@
-,Indicator,NFHS_5,NFHS_4
-1,Female population age 6 years and above who ever attended school (%),78.3,77.4
-2,Population below age 15 years (%),22.5,26.3
-3,"Sex ratio of the total population (females per 1,000 males)",927,899
-4,"Sex ratio at birth for children born in the last five years (females per 1,000 males)","(1,261)",890
-5,Children under age 5 years whose birth was registered with the civil authority (%),94.5,93.0
-6,Deaths in the last 3 years registered with the civil authority (%),(88.1),na
-7,Population living in households with electricity (%),99.6,98.6
-8,Population living in households with an improved drinking-water source (%),96.7,97.7
-9,Population living in households that use an improved sanitation facility(%),79.6,63.6
-10,Households using clean fuel for cooking (%),83.6,74.9
-11,Households using iodized salt (%),99.5,98.3
-12,Households with any usual member covered under a health insurance/financing scheme (%),50.7,35.9
-13,Children age 5 years who attended pre-primary school during the school year 2019-20 (%),(24.4),na
-15,Women who are literate (%),80.0,na
-16,Women with 10 or more years of schooling (%),47.4,42.8
-18,Women age 20-24 years married before age 18 years (%),11.3,14.7
-19,Births in the 5 years preceding the survey that are third or higher order (%),0.5,1.9
-20,Women age 15-19 years who were already mothers or pregnant at the time of the survey (%),3.7,2.1
-21,Women age 15-24 years who use hygienic methods of protection during their menstrual period (%),78.2,67.3
-23,Any method (%),78.7,52.9
-24,Any modern method (%),73.7,50.3
-25,Female sterilization (%),46.4,32.9
-26,Male sterilization (%),0.6,0.5
-27,IUD/PPIUD (%),2.9,1.3
-28,Pill (%),3.9,2.8
-29,Condom (%),17.3,12.5
-30,Injectables (%),0.0,0.3
-32,Total unmet need(%),9.6,15.9
-33,Unmet need for spacing (%),5.2,6.3
-35,Health worker ever talked to female non-users about family planning (%),20.6,27.0
-36,Current users ever told about side effects of current method (%),(78.1),64.8
-39,Mothers who had an antenatal check-up in the first trimester (%),90.2,77.2
-40,Mothers who had at least 4 antenatal care visits (%),64.6,56.6
-41,Mothers whose last birth was protected against neonatal tetanus (%),95.4,96.8
-42,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),61.3,37.1
-43,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),42.5,19.1
-44,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),95.4,96.9
-46,Mothers who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),89.5,58.7
-47,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"3,176","1,533"
-48,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*,*
-50,Children who received postnatal care from a doctor/nurse/LHV/ANM/midwife/other health personnel within 2 days of delivery (%),86.6,na
-52,Institutional births (%),98.3,91.7
-53,Institutional births in public facility (%),67.7,68.0
-54,Home births that were conducted by skilled health personnel (%),0.0,2.6
-55,Births attended by skilled health personnel (%),92.1,94.3
-56,Births delivered by caesarean section (%),21.9,19.4
-57,Births in a private health facility that were delivered by caesarean section (%),*,46.8
-58,Births in a public health facility that were delivered by caesarean section (%),23.4,12.2
-61,Children age 12-23 months fully vaccinated based on information from either vaccination card or mother's recall (%),*,62.3
-62,Children age 12-23 months fully vaccinated based on information from vaccination card only (%),*,(89.1)
-63,Children age 12-23 months who have received BCG (%),*,94.5
-64,Children age 12-23 months who have received 3 doses of polio vaccine (%),*,65.8
-65,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),*,86.3
-66,Children age 12-23 months who have received the first dose of measles-containing vaccine (MCV) (%),*,89.5
-67,Children age 24-35 months who have received a second dose of measles-containing vaccine (MCV) (%),*,na
-68,Children age 12-23 months who have received 3 doses of rotavirus vaccine (%),*,na
-69,Children age 12-23 months who have received 3 doses of penta or hepatitis B vaccine (%),*,57.2
-70,Children age 9-35 months who received a vitamin A dose in the last 6 months (%),(84.6),62.5
-71,Children age 12-23 months who received most of their vaccinations in a public health facility (%),*,88.7
-72,Children age 12-23 months who received most of their vaccinations in a private health facility (%),*,11.3
-74,Prevalence of diarrhoea in the 2 weeks preceding the survey (%),2.3,7.4
-75,Children with diarrhoea in the 2 weeks preceding the survey who received oral rehydration salts (ORS) (%),*,(71.2)
-76,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),*,(38.9)
-77,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,(74.7)
-78,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding the survey (%),0.6,0.0
-80,Children with fever or symptoms of ARI in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,*
-82,Children under age 3 years breastfed within one hour of birth (%),36.0,18.3
-83,Children under age 6 months exclusively breastfed (%),*,*
-84,Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),*,*
-85,Breastfeeding children age 6-23 months receiving an adequate diet (%),*,7.1
-86,Non-breastfeeding children age 6-23 months receiving an adequate diet (%),*,*
-87,Total children age 6-23 months receiving an adequate diet (%),(14.4),6.5
-88,Children under 5 years who are stunted (height-for-age) (%),19.9,47.6
-89,Children under 5 years who are wasted (weight-for-height) (%),20.6,21.0
-90,Children under 5 years who are severely wasted (weight-for-height) (%),4.3,8.1
-91,Children under 5 years who are underweight (weight-for-age) (%),29.1,39.5
-92,Children under 5 years who are overweight (weight-for-height) (%),1.8,5.2
-94,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),18.2,19.1
-95,Women who are overweight or obese (BMI ≥25.0 kg/m) (%),31.5,23.5
-96,Women who have high risk waist-to-hip ratio (≥0.85) (%),29.0,na
-98,Children age 6-59 months who are anaemic (<11.0 g/dl) (%),68.5,77.3
-99,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),53.9,47.5
-100,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),*,37.8
-101,All women age 15-49 years who are anaemic (%),53.5,47.0
-102,All women age 15-19 years who are anaemic (%),(54.6),45.2
-105,Women - Blood sugar level - high (141-160 mg/dl)(%),7.8,na
-106,Women - Blood sugar level - very high (>160 mg/dl)(%),5.9,na
-107,Women - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),14.3,na
-109,Men - Blood sugar level - high (141-160 mg/dl)(%),6.9,na
-110,Men - Blood sugar level - very high (>160 mg/dl) (%),4.9,na
-111,Men - Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.9,na
-114,Women - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),11.5,na
-115,Women - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.8,na
-117,Women - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),22.4,na
-119,Men - Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),18.5,na
-120,Men - Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),5.1,na
-122,Men - Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),24.9,na
-124,Ever undergone a screening test for cervical cancer (%),0.0,na
-125,Ever undergone a breast examination for breast cancer (%),0.0,na
-126,Ever undergone an oral cavity examination for oral cancer (%),0.0,na
-128,Women age 15 years and above who use any kind of tobacco (%),8.5,na
-129,Men age 15 years and above who use any kind of tobacco (%),32.9,na
-130,Women age 15 years and above who consume alcohol (%),0.2,na
-131,Men age 15 years and above who consume alcohol (%),14.5,na
+,Indicator,NFHS-5,NFHS-4
+0,Female population age 6 years and above who ever attended school (%),78.3,77.4
+1,Population below age 15 years (%),22.5,26.3
+2,"Sex ratio of the total population (females per 1,000 males)",927,899
+3,"Sex ratio at birth for children born in the last five years (females per 1,000 males)","(1,261)",890
+4,Children under age 5 years whose birth was registered with the civil authority (%),94.5,93.0
+5,Deaths in the last 3 years registered with the civil authority (%),(88.1),na
+6,Population living in households with electricity (%),99.6,98.6
+7,Population living in households with an improved drinking-water source (%),96.7,97.7
+8,Population living in households that use an improved sanitation facility(%),79.6,63.6
+9,Households using clean fuel for cooking (%),83.6,74.9
+10,Households using iodized salt (%),99.5,98.3
+11,Households with any usual member covered under a health insurance/financing scheme (%),50.7,35.9
+12,Children age 5 years who attended pre-primary school during the school year 2019-20 (%),(24.4),na
+13,Women who are literate (%),80.0,na
+14,Women with 10 or more years of schooling (%),47.4,42.8
+15,Women age 20-24 years married before age 18 years (%),11.3,14.7
+16,Births in the 5 years preceding the survey that are third or higher order (%),0.5,1.9
+17,Women age 15-19 years who were already mothers or pregnant at the time of the survey (%),3.7,2.1
+18,Women age 15-24 years who use hygienic methods of protection during their menstrual period (%),78.2,67.3
+19,Any method (%),78.7,52.9
+20,Any modern method (%),73.7,50.3
+21,Female sterilization (%),46.4,32.9
+22,Male sterilization (%),0.6,0.5
+23,IUD/PPIUD (%),2.9,1.3
+24,Pill (%),3.9,2.8
+25,Condom (%),17.3,12.5
+26,Injectables (%),0.0,0.3
+27,Total unmet need(%),9.6,15.9
+28,Unmet need for spacing (%),5.2,6.3
+29,Health worker ever talked to female non-users about family planning (%),20.6,27.0
+30,Current users ever told about side effects of current method (%),(78.1),64.8
+31,Mothers who had an antenatal check-up in the first trimester (%),90.2,77.2
+32,Mothers who had at least 4 antenatal care visits (%),64.6,56.6
+33,Mothers whose last birth was protected against neonatal tetanus (%),95.4,96.8
+34,Mothers who consumed iron folic acid for 100 days or more when they were pregnant (%),61.3,37.1
+35,Mothers who consumed iron folic acid for 180 days or more when they were pregnant (%),42.5,19.1
+36,Registered pregnancies for which the mother received a Mother and Child Protection (MCP) card (%),95.4,96.9
+37,days of delivery (%),89.5,58.7
+38,Average out-of-pocket expenditure per delivery in a public health facility (Rs.),"3,176","1,533"
+39,Children born at home who were taken to a health facility for a check-up within 24 hours of birth (%),*,*
+40,days of delivery (%),86.6,na
+41,Institutional births (%),98.3,91.7
+42,Institutional births in public facility (%),67.7,68.0
+43,Home births that were conducted by skilled health personnel (%),0.0,2.6
+44,Births attended by skilled health personnel (%),92.1,94.3
+45,Births delivered by caesarean section (%),21.9,19.4
+46,Births in a private health facility that were delivered by caesarean section (%),*,46.8
+47,Births in a public health facility that were delivered by caesarean section (%),23.4,12.2
+48,mother's recall (%),*,62.3
+49,Children age 12-23 months fully vaccinated based on information from vaccination card only (%),*,(89.1)
+50,Children age 12-23 months who have received BCG (%),*,94.5
+51,Children age 12-23 months who have received 3 doses of polio vaccine (%),*,65.8
+52,Children age 12-23 months who have received 3 doses of penta or DPT vaccine (%),*,86.3
+53,Children age 12-23 months who have received the first dose of measles-containing vaccine (MCV) (%),*,89.5
+54,Children age 24-35 months who have received a second dose of measles-containing vaccine (MCV) (%),*,na
+55,Children age 12-23 months who have received 3 doses of rotavirus vaccine (%),*,na
+56,Children age 12-23 months who have received 3 doses of penta or hepatitis B vaccine (%),*,57.2
+57,Children age 9-35 months who received a vitamin A dose in the last 6 months (%),(84.6),62.5
+58,Children age 12-23 months who received most of their vaccinations in a public health facility (%),*,88.7
+59,Children age 12-23 months who received most of their vaccinations in a private health facility (%),*,11.3
+60,Prevalence of diarrhoea in the 2 weeks preceding the survey (%),2.3,7.4
+61,Children with diarrhoea in the 2 weeks preceding the survey who received oral rehydration salts (ORS) (%),*,(71.2)
+62,Children with diarrhoea in the 2 weeks preceding the survey who received zinc (%),*,(38.9)
+63,Children with diarrhoea in the 2 weeks preceding the survey taken to a health facility or health provider (%),*,(74.7)
+64,Prevalence of symptoms of acute respiratory infection (ARI) in the 2 weeks preceding the survey (%),0.6,0.0
+65,health provider (%),*,*
+66,Children under age 3 years breastfed within one hour of birth (%),36.0,18.3
+67,Children under age 6 months exclusively breastfed (%),*,*
+68,Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),*,*
+69,Breastfeeding children age 6-23 months receiving an adequate diet (%),*,7.1
+70,Non-breastfeeding children age 6-23 months receiving an adequate diet (%),*,*
+71,Total children age 6-23 months receiving an adequate diet (%),(14.4),6.5
+72,Children under 5 years who are stunted (height-for-age) (%),19.9,47.6
+73,Children under 5 years who are wasted (weight-for-height) (%),20.6,21.0
+74,Children under 5 years who are severely wasted (weight-for-height) (%),4.3,8.1
+75,Children under 5 years who are underweight (weight-for-age) (%),29.1,39.5
+76,Children under 5 years who are overweight (weight-for-height) (%),1.8,5.2
+77,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),18.2,19.1
+78,Women who are overweight or obese (BMI ≥25.0 kg/m) (%),31.5,23.5
+79,Women who have high risk waist-to-hip ratio (≥0.85) (%),29.0,na
+80,Children age 6-59 months who are anaemic (<11.0 g/dl) (%),68.5,77.3
+81,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),53.9,47.5
+82,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),*,37.8
+83,All women age 15-49 years who are anaemic (%),53.5,47.0
+84,All women age 15-19 years who are anaemic (%),(54.6),45.2
+85,Blood sugar level - high (141-160 mg/dl)(%),7.8,na
+86,Blood sugar level - very high (>160 mg/dl)(%),5.9,na
+87,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),14.3,na
+88,Blood sugar level - high (141-160 mg/dl)(%),6.9,na
+89,Blood sugar level - very high (>160 mg/dl) (%),4.9,na
+90,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),12.9,na
+91,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),11.5,na
+92,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),6.8,na
+93,blood pressure (%),22.4,na
+94,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),18.5,na
+95,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),5.1,na
+96,blood pressure (%),24.9,na
+97,Ever undergone a screening test for cervical cancer (%),0.0,na
+98,Ever undergone a breast examination for breast cancer (%),0.0,na
+99,Ever undergone an oral cavity examination for oral cancer (%),0.0,na
+100,Women age 15 years and above who use any kind of tobacco (%),8.5,na
+101,Men age 15 years and above who use any kind of tobacco (%),32.9,na
+102,Women age 15 years and above who consume alcohol (%),0.2,na
+103,Men age 15 years and above who consume alcohol (%),14.5,na

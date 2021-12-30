@@ -6,7 +6,6 @@ December, 2021
 '''
 
 # List of states
-#'''
 States = {
     'Punjab': 
     {
@@ -607,4 +606,3 @@ States = {
         'Districts': 0
     }
 }
-#'''
