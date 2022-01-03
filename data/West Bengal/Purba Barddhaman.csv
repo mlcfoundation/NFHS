@@ -90,42 +90,41 @@
 88,Men - vaccine.,,
 89,Men - doses each of polio (excluding polio vaccine given at birth) and DPT or penta vaccine.,,
 90,Men - Indicators,,(2019-20)
-91,Women - Child Feeding Practices and Nutritional Status of Children,,Total
-92,Women - Children under age 3 years breastfed within one hour of birth (%),,54.5
-93,Women - Children under age 6 months exclusively breastfed (%),,*
-94,Men - Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),,*
-95,Men - Breastfeeding children age 6-23 months receiving an adequate diet  (%),,36.5
-96,Men - Non-breastfeeding children age 6-23 months receiving an adequate diet (%),,*
-97,Total children age 6-23 months receiving an adequate diet  (%),,34.1
-98,Children under 5 years who are stunted (height-for-age) (%),,32.7
-99,Children under 5 years who are wasted (weight-for-height) (%),,21.1
-100,Children under 5 years who are severely wasted (weight-for-height) (%),,5.4
-101,Children under 5 years who are underweight (weight-for-age) (%),,31.6
-102,Children under 5 years who are overweight (weight-for-height) (%),,3.0
-103,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),,16.3
-104,Women who are overweight or obese (BMI ≥25.0 kg/m) (%),,23.9
-105,Women who have high risk waist-to-hip ratio (≥0.85) (%),,73.0
-106,Children age 6-59 months who are anaemic (<11.0 g/dl) (%),,71.5
-107,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),,78.4
-108,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),,(63.7)
-109,All women age 15-49 years who are anaemic (%),,77.9
-110,All women age 15-19 years who are anaemic (%),,78.2
-111,Blood sugar level - high (141-160 mg/dl)(%),,8.1
-112,Blood sugar level - very high (>160 mg/dl)(%),,8.1
-113,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),,16.6
-114,Blood sugar level - high (141-160 mg/dl)(%),,10.0
-115,Blood sugar level - very high (>160 mg/dl) (%),,11.2
-116,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),,21.8
-117,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),,11.5
-118,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),,5.7
-119,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),,21.2
-120,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),,11.5
-121,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),,3.8
-122,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),,18.4
-123,Ever undergone a screening test for cervical cancer (%),,0.2
-124,Ever undergone a breast examination for breast cancer (%),,0.1
-125,Ever undergone an oral cavity examination for oral cancer (%),,0.0
-126,Women age 15 years and above who use any kind of tobacco (%),,9.9
-127,Men age 15 years and above who use any kind of tobacco (%),,50.1
-128,Women age 15 years and above who consume alcohol (%),,1.2
-129,Men age 15 years and above who consume alcohol (%),,22.9
+91,Women - Children under age 3 years breastfed within one hour of birth (%),,54.5
+92,Women - Children under age 6 months exclusively breastfed (%),,*
+93,Women - Children age 6-8 months receiving solid or semi-solid food and breastmilk (%),,*
+94,Men - Breastfeeding children age 6-23 months receiving an adequate diet  (%),,36.5
+95,Men - Non-breastfeeding children age 6-23 months receiving an adequate diet (%),,*
+96,Men - Total children age 6-23 months receiving an adequate diet  (%),,34.1
+97,Children under 5 years who are stunted (height-for-age) (%),,32.7
+98,Children under 5 years who are wasted (weight-for-height) (%),,21.1
+99,Children under 5 years who are severely wasted (weight-for-height) (%),,5.4
+100,Children under 5 years who are underweight (weight-for-age) (%),,31.6
+101,Children under 5 years who are overweight (weight-for-height) (%),,3.0
+102,Women whose Body Mass Index (BMI) is below normal (BMI <18.5 kg/m) (%),,16.3
+103,Women who are overweight or obese (BMI ≥25.0 kg/m) (%),,23.9
+104,Women who have high risk waist-to-hip ratio (≥0.85) (%),,73.0
+105,Children age 6-59 months who are anaemic (<11.0 g/dl) (%),,71.5
+106,Non-pregnant women age 15-49 years who are anaemic (<12.0 g/dl) (%),,78.4
+107,Pregnant women age 15-49 years who are anaemic (<11.0 g/dl) (%),,(63.7)
+108,All women age 15-49 years who are anaemic (%),,77.9
+109,All women age 15-19 years who are anaemic (%),,78.2
+110,Blood sugar level - high (141-160 mg/dl)(%),,8.1
+111,Blood sugar level - very high (>160 mg/dl)(%),,8.1
+112,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),,16.6
+113,Blood sugar level - high (141-160 mg/dl)(%),,10.0
+114,Blood sugar level - very high (>160 mg/dl) (%),,11.2
+115,Blood sugar level - high or very high (>140 mg/dl) or taking medicine to control blood sugar level (%),,21.8
+116,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),,11.5
+117,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),,5.7
+118,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),,21.2
+119,Mildly elevated blood pressure (Systolic 140-159 mm of Hg and/or Diastolic 90-99 mm of Hg) (%),,11.5
+120,Moderately or severely elevated blood pressure (Systolic ≥160mm of Hg and/or Diastolic ≥100mm of Hg) (%),,3.8
+121,Elevated blood pressure (Systolic ≥140 mm of Hg and/or Diastolic ≥90 mm of Hg) or taking medicine to control blood pressure (%),,18.4
+122,Ever undergone a screening test for cervical cancer (%),,0.2
+123,Ever undergone a breast examination for breast cancer (%),,0.1
+124,Ever undergone an oral cavity examination for oral cancer (%),,0.0
+125,Women age 15 years and above who use any kind of tobacco (%),,9.9
+126,Men age 15 years and above who use any kind of tobacco (%),,50.1
+127,Women age 15 years and above who consume alcohol (%),,1.2
+128,Men age 15 years and above who consume alcohol (%),,22.9

@@ -35,7 +35,7 @@ def extract_state_data(tables, name):
         if (row[1].strip().startswith('<s>')) or \
            (len(row[1].strip()) == 0) or \
            (len(row[4].strip()) == 0) or \
-           (row[2].strip().startswith('Urban') and row[3].strip().startswith('Rural')):
+           (row[2].strip().startswith('Urban') and (row[3].strip().startswith('Rural') or len(row[3].strip()) == 0)):
                 droppable.append(row[0])
 
     # Drop all dropeables
@@ -95,7 +95,7 @@ def extract_districts_data(tables, name):
             if (str(row[1]).strip().startswith('<s>')) or \
                 (len(str(row[1]).strip()) == 0) or \
                 (len(str(row[3]).strip()) == 0) or \
-                (str(row[2]).strip().startswith('Total') and str(row[3]).strip().startswith('Total')):
+                ((len(str(row[2].strip())) == 0 or str(row[2]).strip().startswith('Total')) and str(row[3]).strip().startswith('Total')):
                     droppable.append(row[0])
 
     # Drop all dropeables
