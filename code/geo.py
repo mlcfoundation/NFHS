@@ -7,6 +7,42 @@ December, 2021
 
 # List of states
 States = {
+    'Gujarat':
+    {
+        'State': 
+        {
+            'Begin': 5, 
+            'Sample_Info': 1,
+            'Data_Begin': 2,
+            'Data_Span': 4
+        },
+        'District':
+        {
+            'Begin': 11,
+            'Sample_Info': 1,
+            'Data_Begin': 2,
+            'Data_Span': 4,
+        },
+        'Districts': 33
+    },
+    'Himachal_Pradesh':
+    {
+        'State': 
+        {
+            'Begin': 5, 
+            'Sample_Info': 1,
+            'Data_Begin': 2,
+            'Data_Span': 4,
+        },
+        'District':
+        {
+            'Begin': 11,
+            'Sample_Info': 1,
+            'Data_Begin': 2,
+            'Data_Span': 4,
+        },
+        'Districts': 12
+    },    
     'Punjab': 
     {
         'State': 

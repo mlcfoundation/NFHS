@@ -8,6 +8,7 @@ December, 2021
 from datetime import date
 from multiprocessing import freeze_support, Pool
 from time import time
+from pandas.core.indexes.base import Index
 import pdfplumber
 import camelot
 import extractor
@@ -150,7 +151,7 @@ def get_district_info(info):
 @time_it
 def persist_sampling(samplings):
     df = pd.DataFrame(samplings)
-    df.to_csv(path.join(DATA_PATH, 'SampleInfo.csv'))
+    df.to_csv(path.join(DATA_PATH, 'SampleInfo.csv'), index=False)
 
 @time_it
 def persist_districts_sampling(samplings):
@@ -166,13 +167,13 @@ def persist_districts_sampling(samplings):
                     'Men': info['Men']
                 })
             df = pd.DataFrame(data)
-            df.to_csv(path.join(DATA_PATH, state, 'SampleInfo.csv'))
+            df.to_csv(path.join(DATA_PATH, state, 'SampleInfo.csv'), index=False)
 
 @time_it
 def persist_indicators(indicators):
     for state_indicators in indicators:
         for state, state_data in state_indicators.items():
-            state_data['State'].to_csv(path.join(DATA_PATH, state, 'Indicators.csv'))
+            state_data['State'].to_csv(path.join(DATA_PATH, state, 'Indicators.csv'), index=False)
 
 @time_it
 def persist_districts_indicators(indicators):
@@ -181,7 +182,7 @@ def persist_districts_indicators(indicators):
             if 'Districts' in state_data:
                 for district_indicators in state_data['Districts']:
                     for district, district_data in district_indicators.items():
-                        district_data.to_csv(path.join(DATA_PATH, state, district+'.csv'))
+                        district_data.to_csv(path.join(DATA_PATH, state, district+'.csv'), index=False)
             else:
                 print(f'...No districts in {state}')
 
