@@ -5,7 +5,7 @@ Sample script to visualize NFHS5 data using streamlit.io
 Akshay Ranjan <akshay@mlcfoundation.org.in>
 
 '''
-from numpy import modf
+from numpy import dtype, modf
 from pandas.core.frame import DataFrame
 import streamlit as st
 import pandas as pd
@@ -13,6 +13,7 @@ import numpy as np
 import altair as alt
 import os
 import json
+import re
 import plotly.express as pex
 
 DATA_PATH = os.path.join('.', 'data')
@@ -160,44 +161,36 @@ def read_district_info(districts_states):
 
 data = None
 def sanitize_data(mdf):
+    pat = re.compile('\,|\(|\)', flags=re.IGNORECASE)
     cols = ['NFHS-5 Rural', 'NFHS-5 Urban', 'NFHS-5 Total']
     if len(selected_districts) == 0:
         if len(selected_states):
-            mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace(",","")
-            mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace(",","")
-            mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace(",","")
-            mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace("*","0")
-            mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace("*","0")
-            mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace("*","0")
-            mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace("(","")
-            mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace("(","")
-            mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace("(","")
-            mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace(")","")
-            mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace(")","")
-            mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace(")","")        
+            if mdf['NFHS-5 Rural'].dtype == np.object:
+                mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace(pat,"")
+                mdf['NFHS-5 Rural'] = mdf['NFHS-5 Rural'].str.replace("*","0")
+            if mdf['NFHS-5 Urban'].dtype == np.object:
+                mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace(pat,"")
+                mdf['NFHS-5 Urban'] = mdf['NFHS-5 Urban'].str.replace("*","0")
+            if mdf['NFHS-5 Total'].dtype == np.object:
+                mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace(pat,"")
+                mdf['NFHS-5 Total'] = mdf['NFHS-5 Total'].str.replace("*","0")   
             mdf['NFHS-5 Rural'] = pd.to_numeric(mdf['NFHS-5 Rural'])
             mdf['NFHS-5 Urban'] = pd.to_numeric(mdf['NFHS-5 Urban'])
             mdf['NFHS-5 Total'] = pd.to_numeric(mdf['NFHS-5 Total'])
             if do_nfhs4:
-                mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace(",","")
-                mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace("(","")
-                mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace(")","")
-                mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace(",","")
-                mdf['NFHS-4 Rural'] = mdf['NFHS-4 Rural'].str.replace("*","0")
-                mdf['NFHS-4 Urban'] = mdf['NFHS-4 Urban'].str.replace("*","0")
-                mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace("*","0")                
+                if mdf['NFHS-4 Total'].dtype == np.object:
+                    mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace(pat,"")
+                    mdf['NFHS-4 Total'] = mdf['NFHS-4 Total'].str.replace("*","0")                
                 mdf['NFHS-4 Total'] = pd.to_numeric(mdf['NFHS-4 Total'])
     else:
-        mdf['NFHS-5'] = mdf['NFHS-5'].str.replace(",", "")
-        mdf['NFHS-5'] = mdf['NFHS-5'].str.replace("(", "")
-        mdf['NFHS-5'] = mdf['NFHS-5'].str.replace(")", "")
-        mdf['NFHS-5'] = mdf['NFHS-5'].str.replace("*","0")                
+        if mdf['NFHS-5'].dtype == np.object:
+            mdf['NFHS-5'] = mdf['NFHS-5'].str.replace(pat,"")
+            mdf['NFHS-5'] = mdf['NFHS-5'].str.replace("*","0")                
         mdf['NFHS-5'] = pd.to_numeric(mdf['NFHS-5'])
         if do_nfhs4:
-            mdf['NFHS-4'] = mdf['NFHS-4'].str.replace(",", "")
-            mdf['NFHS-4'] = mdf['NFHS-4'].str.replace("(", "")
-            mdf['NFHS-4'] = mdf['NFHS-4'].str.replace(")", "")
-            mdf['NFHS-4'] = mdf['NFHS-4'].str.replace("*","0")                
+            if mdf['NFHS-4'].dtype == np.object:
+                mdf['NFHS-4'] = mdf['NFHS-4'].str.replace(pat,"")
+                mdf['NFHS-4'] = mdf['NFHS-4'].str.replace("*","0")                
             mdf['NFHS-4'] = pd.to_numeric(mdf['NFHS-4'])        
     return mdf
 
@@ -228,9 +221,9 @@ def get_district_data(indicators, districts_states):
 
     #mdf.set_index('District', drop=True, inplace=True)    
     if not do_nfhs4:
-        return mdf[['District', 'NFHS-5']] if not mdf.empty else mdf
+        return mdf[['District', 'State', 'NFHS-5']] if not mdf.empty else mdf
     else:
-        return mdf[['District', 'NFHS-5', 'NFHS-4']] if not mdf.empty else mdf
+        return mdf[['District', 'State', 'NFHS-5', 'NFHS-4']] if not mdf.empty else mdf
 
 #------------------------------------------------------------------------------
 
@@ -249,8 +242,14 @@ indicators_selected = st.selectbox('Indicator', indicators, help='Select an indi
 
 if len(selected_districts) == 0:
     data = get_state_data(indicators_selected, selected_states)
+    data.reset_index(inplace=True, drop=True)
+    # Sanitize data
+    data = sanitize_data(data)
 else:
     data = get_district_data(indicators_selected, selected_districts)
+    data.reset_index(inplace=True, drop=True)
+    # Sanitize data
+    data = sanitize_data(data)
 
 #------------------------------------------------------------------------------
 
@@ -262,72 +261,77 @@ with st.expander('Sample Data', expanded=True):
         colM.metric('Men', str(info.sum()['Men']))
 
 if do_table:
-    st.table(data)
+    with st.expander('Table', expanded=True):
+        st.dataframe(data)
 
 if do_chart:
-    if len(selected_districts) == 0:
-        if len(selected_states):
-            ax = ["NFHS-5 Rural", "NFHS-5 Urban", "NFHS-5 Total"]
+    with st.expander('Chart', expanded=True):
+        if len(selected_districts) == 0:
+            if len(selected_states):
+                ax = ["NFHS-5 Rural", "NFHS-5 Urban", "NFHS-5 Total"]
+                if do_nfhs4:
+                    ax = ax + ["NFHS-4 Total"]
+                chart = pex.bar(sanitize_data(data), 
+                                y="State", 
+                                x=ax,
+                                text_auto=True,
+                                barmode='group',
+                                labels={"value":indicators_selected},
+                                height=150*len(selected_states))
+                st.plotly_chart(chart, use_container_width=True, )
+        else:
+            ax = ["NFHS-5"]
             if do_nfhs4:
-                ax = ax + ["NFHS-4 Total"]
-            chart = pex.bar(sanitize_data(data), 
-                            y="State", 
+                ax = ax + ["NFHS-4"]
+            chart = pex.bar(sanitize_data(data),                        
+                            y="District", 
                             x=ax,
-                            text_auto=True,
+                            text_auto=True, 
                             barmode='group',
-                            labels={"value":indicators_selected},
-                            height=200*len(selected_states))
-            st.plotly_chart(chart, use_container_width=True, )
-    else:
-        ax = ["NFHS-5"]
-        if do_nfhs4:
-            ax = ax + ["NFHS-4"]
-        chart = pex.bar(sanitize_data(data),                        
-                        y="District", 
-                        x=ax,
-                        text_auto=True, 
-                        barmode='group',
-                        labels={"value":indicators_selected})
-        st.plotly_chart(chart, use_container_width=True)
+                            labels={"value":indicators_selected})
+            st.plotly_chart(chart, use_container_width=True)
 
 if do_map:
-    mbt = ['open-street-map', 
-           'white-bg', 
-           'carto-positron', 
-           'carto-darkmatter', 
-           'stamen- terrain', 
-           'stamen-toner', 
-           'stamen-watercolor']
-    
-    if len(selected_districts) == 0:
-        if len(selected_states):
+    with st.expander('Map', expanded=True):
+        # Use mapbox
+        pex.set_mapbox_access_token('pk.eyJ1IjoibWxjZm91bmRhdGlvbiIsImEiOiJja3k3ZHE0cWcxNG9vMnZvbjZucmp3N2psIn0.GjO_fRr-sr5zk8Z7kFH7gw')
+
+        if len(selected_districts) == 0:
+            if len(selected_states):
+                data_color = 'NFHS-4 Total' if do_nfhs4 else 'NFHS-5 Total'
+                r_max = data[data_color].max()
+                r_min = data[data_color].min()
+                chart = pex.choropleth_mapbox(data,
+                                                geojson=states_geo,
+                                                locations='State',
+                                                color=data_color,
+                                                color_continuous_scale="spectral_r",
+                                                range_color=(r_min,r_max),
+                                                featureidkey="properties.NAME_1",
+                                                hover_data=["NFHS-5 Total"],
+                                                mapbox_style='light',
+                                                center={"lat": 22, "lon": 82},
+                                                zoom=3.85,
+                                                width=900,
+                                                height=900,
+                                                title=indicators_selected + f' - {data_color}')
+                st.plotly_chart(chart, use_container_width=True)
+        else:
+            data_color = 'NFHS-4' if do_nfhs4 else 'NFHS_5'
+            r_max = data[data_color].max()
+            r_min = data[data_color].min()
             chart = pex.choropleth_mapbox(sanitize_data(data),
-                                            geojson=states_geo,
-                                            locations='State',
-                                            color='NFHS-5 Total',
-                                            color_continuous_scale="spectral_r",
-                                            range_color=(0,100),
-                                            featureidkey="properties.NAME_1",
-                                            hover_data=["NFHS-5 Total"],
-                                            mapbox_style=mbt[2],
-                                            center={"lat": 22, "lon": 82},
-                                            zoom=3.85,
-                                            width=900,
-                                            height=900)
+                                        geojson=districts_geo,
+                                        locations='District',
+                                        color=data_color,
+                                        color_continuous_scale="spectral_r",
+                                        range_color=(0,100),
+                                        featureidkey="properties.NAME_2",
+                                        hover_data=["NFHS-5"],
+                                        mapbox_style='satellite',
+                                        center={"lat": 22, "lon": 82},
+                                        zoom=3.85,
+                                        width=900,
+                                        height=900,
+                                        title=indicators_selected + f' - {data_color}')
             st.plotly_chart(chart, use_container_width=True)
-    else:
-        chart = pex.choropleth_mapbox(sanitize_data(data),
-                                      geojson=districts_geo,
-                                      locations='District',
-                                      color='NFHS-5',
-                                      color_continuous_scale="spectral_r",
-                                      range_color=(0,100),
-                                      featureidkey="properties.NAME_2",
-                                      hover_data=["NFHS-5"],
-                                      mapbox_style=mbt[2],
-                                      center={"lat": 22, "lon": 82},
-                                      zoom=3.85,
-                                      width=900,
-                                      height=900,
-                                      title=indicators_selected)
-        st.plotly_chart(chart, use_container_width=True)
